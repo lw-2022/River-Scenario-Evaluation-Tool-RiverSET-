@@ -1,0 +1,314 @@
+Terrain: 
+
+Option 1 (Original Terrain):  
+FileName=OriginalScenario.g06
+
+Option 2 (Lowered Berm to Floodplain): 
+FileName=Scenario5_1Terrain.g02
+
+Option 3 (Lowered Berm to Q5 Floodplain): 
+FileName=Scenario5_2Terrain.g03
+
+Option 4 (Lowered Berm to Q5 Floodplain plus culvert elevations): 
+FileName=Scenario5_5Terrain.g04
+
+Option 5 (Lowered entire berm and re-route the river): 
+FileName=NewScenario7.g05
+
+Geometry: 
+
+Option 6 (East Culvert): 
+
+Conn Outlet Rating Curve= 0 ,False,,
+Connection=East Culvert    ,470280.3087094,254816.9134453
+Connection Desc=
+Connection Line=2
+470273.826647042254818.654581827470286.790771692254815.172308863
+Connection Last Edited Time=Jun/02/2020 19:41:06
+Conn CellSize Min=15
+Conn CellSize Max=30
+Conn Near Repeats=1
+Conn Protection Radius=-1
+Connection Up SA=2D Flow         
+Connection Dn SA=2D Flow         
+Conn Routing Type= 1 
+Conn Use RC Family=False
+Conn OverFlow Method 2D=True
+Conn Weir WD=
+Conn Weir Coef=1.66
+Conn Weir Is Ogee= 0 
+Conn Simple Spill Pos Coef=0.05
+Conn Simple Spill Neg Coef=0.05
+Conn Weir SE= 12 
+       0 113.204   1.992 113.127   3.102  113.05   3.441  113.04   4.166 113.057
+   5.083 113.005   5.655 112.991    7.79 113.136   8.515 113.219   9.964 113.309
+  11.939 113.379  13.424 113.344
+Connection Culv=1,0.81,,12.49,0.033,0.5,1,2,3,110.3,110.3, 1 ,import #0   , 0 ,
+     6.5     6.5
+Conn Culvert Barrel=1,Barrel# 1,2
+470281.907491509 254823.97047281470278.717191508254811.899772807
+Conn Culv Bottom n=0.03
+Conn Culv Bottom Depth=0.081
+
+Option 7 (West Culvert): 
+
+Conn Outlet Rating Curve= 0 ,False,,
+Connection=West Culvert    ,470187.6970431,254843.054251
+Connection Desc=
+Connection Line=2
+470180.158040676254845.429553162470195.236045464254840.678948914
+Connection Last Edited Time=Jun/02/2020 19:40:58
+Conn CellSize Min=5
+Conn CellSize Max=10
+Conn Near Repeats=1
+Conn Protection Radius=-1
+Connection Up SA=2D Flow         
+Connection Dn SA=2D Flow         
+Conn Routing Type= 1 
+Conn Use RC Family=False
+Conn OverFlow Method 2D=True
+Conn Weir WD=
+Conn Weir Coef=1.66
+Conn Weir Is Ogee= 0 
+Conn Simple Spill Pos Coef=0.05
+Conn Simple Spill Neg Coef=0.05
+Conn Weir SE= 19 
+       0 113.034   1.145 113.001   1.879 113.036   2.768 113.045   3.347 113.024
+   4.081 113.057   5.548 113.001   6.282  112.99   7.016 113.023    7.75 113.001
+   8.484 113.024   9.218 113.011  10.581 113.047   11.42 113.027  12.154 113.069
+  12.888 113.041  13.622 113.045  15.089 113.115  15.809  113.08
+Connection Culv=1,1.044,,12.66,0.033,0.5,1,2,3,111.04,110.61, 1 ,import #0   , 0 ,
+     7.8     7.8
+Conn Culvert Barrel=1,Barrel# 1,2
+470189.623791482254850.854372816470186.405091481254838.608172814
+Conn Culv Bottom n=0.03
+Conn Culv Bottom Depth=0.1044
+
+Option 8 (Rail Trail Culvert): 
+
+Conn Outlet Rating Curve= 0 ,False,,
+Connection=RailTrailCulvert,470389.168669,254784.7598832
+Connection Desc=
+Connection Line=2
+470398.981435915 254781.73254025470379.355902026254787.787226237
+Connection Last Edited Time=Jun/08/2020 09:16:24
+Conn CellSize Min=5
+Conn CellSize Max=10
+Conn Near Repeats=1
+Conn Protection Radius=-1
+Connection Up SA=2D Flow         
+Connection Dn SA=2D Flow         
+Conn Routing Type= 1 
+Conn Use RC Family=False
+Conn OverFlow Method 2D=True
+Conn Weir WD=
+Conn Weir Coef=1.66
+Conn Weir Is Ogee= 0 
+Conn Simple Spill Pos Coef=0.05
+Conn Simple Spill Neg Coef=0.05
+Conn Weir SE= 19 
+       0 113.441   1.416 113.423   2.963 113.424   3.696 113.397   4.278 113.414
+   5.161 113.389   5.893 113.403   6.626 113.384   8.091 113.385  10.996 113.245
+  11.754 113.282  12.486 113.279  13.219 113.335  13.951 113.361  16.594 113.403
+  18.274 113.394  19.079 113.433  19.812 113.385  20.538 113.381
+Connection Culv=1,0.98,,12.65,0.033,0.5,1,2,3,110.96,110.86, 1 ,import #0   , 0 ,
+    10.2    10.2
+Conn Culvert Barrel=1,NewCulvert,3
+470386.523949404254775.653956029470390.158704199254787.769805346
+470390.158704199254787.769805346
+Conn Culv Bottom n=0.03
+Conn Culv Bottom Depth=0.098
+
+Option 9 (33ft bridge): 
+
+Connection=33ft Bridge     ,470187.6970431,254843.054251
+Connection Desc=
+Connection Line=2
+470180.158040676254845.429553162470195.236045464254840.678948914
+Connection Last Edited Time=Aug/03/2020 13:53:26
+Conn CellSize Min=5
+Conn CellSize Max=10
+Conn Near Repeats=1
+Conn Protection Radius=-1
+Connection Up SA=2D Flow         
+Connection Dn SA=2D Flow         
+Conn Routing Type= 1 
+Conn Use RC Family=False
+Conn OverFlow Method 2D=True
+Conn Weir WD=
+Conn Weir Coef=1.66
+Conn Weir Is Ogee= 0 
+Conn Simple Spill Pos Coef=0.05
+Conn Simple Spill Neg Coef=0.05
+Conn Weir SE= 19 
+       0 113.034   1.145 113.001   1.879 113.036   2.768 113.045   3.347 113.024
+   4.081 113.057   5.548 113.001   6.282  112.99   7.016 113.023    7.75 113.001
+   8.484 113.024   9.218 113.011  10.581 113.047   11.42 113.027  12.154 113.069
+  12.888 113.041  13.622 113.045  15.089 113.115  15.809  113.08
+Connection Culv=2,2.195,10.0584,7,0.011,0.03,0.05,8,3,110.8,110.71, 1 ,import #0   , 0 ,
+     7.8     7.8
+Conn Culvert Barrel=1,Barrel# 1,2
+470189.623791482254850.854372816470186.405091481254838.608172814
+Conn Culv Bottom n=0.03
+Conn Culv Bottom Depth=0.2195
+
+Option 10 (16ft bridge): 
+
+Connection=16ft Bridge     ,470187.6970431,254843.054251
+Connection Desc=
+Connection Line=2
+470173.672316906254847.387022791 470204.33694759 254837.74250185
+Connection Last Edited Time=Aug/04/2020 09:30:11
+Conn CellSize Min=5
+Conn CellSize Max=10
+Conn Near Repeats=1
+Conn Protection Radius=-1
+Connection Up SA=2D Flow         
+Connection Dn SA=2D Flow         
+Conn Routing Type= 1 
+Conn Use RC Family=False
+Conn OverFlow Method 2D=True
+Conn Weir WD=
+Conn Weir Coef=1.66
+Conn Weir Is Ogee= 0 
+Conn Simple Spill Pos Coef=0.05
+Conn Simple Spill Neg Coef=0.05
+Conn Weir SE= 33 
+       0 113.224     .57  113.19   1.339 113.193   3.541 113.107   4.275 113.098
+   5.123 113.047   6.152 113.043   7.944 113.003   8.943  113.04  10.145 113.026
+  10.879 113.055  12.122 113.005   13.08 112.989  13.814 113.023  14.548     113
+  15.282  113.02  16.016  113.01  17.317 113.048  18.217  113.03  18.951  113.07
+  19.685 113.043  20.108 113.044  21.225 113.079  21.783 113.112   22.62 113.082
+  23.354 113.113  24.821 113.123  27.756 113.241  28.482 113.289  29.958 113.325
+  30.692 113.304  31.273 113.308  32.146 113.278
+Connection Culv=2,2.19456,4.8768,7,0.011,0.03,0.05,8,3,110.66,110.57, 1 ,import #0   , 0 ,
+    14.6    14.6
+Conn Culvert Barrel=1,Barrel# 1,2
+470189.623791482254850.854372816470186.405091481254838.608172814
+Conn Culv Bottom n=0.03
+Conn Culv Bottom Depth=0.219456
+
+Option 11 (Small culvert - West Side): 
+
+Conn Outlet Rating Curve= 0 ,False,,
+Connection=Culvert 1       ,470218.8676698,254833.8644117
+Connection Desc=
+Connection Line=2
+470228.209404683254831.299847172 470217.41083649254833.937665357
+Connection Last Edited Time=Jun/18/2020 09:58:30
+Conn Near Repeats=1
+Conn Protection Radius=-1
+Connection Up SA=2D Flow         
+Connection Dn SA=2D Flow         
+Conn Routing Type= 1 
+Conn Use RC Family=False
+Conn OverFlow Method 2D=False
+Conn Weir WD=
+Conn Weir Coef=1.66
+Conn Weir Is Ogee= 0 
+Conn Simple Spill Pos Coef=0.05
+Conn Simple Spill Neg Coef=0.05
+Conn Weir SE= 10 
+       0 113.298   1.502 113.313   2.223 113.337   3.664  113.34   5.826 113.322
+   6.875 113.293   8.708 113.289   9.429  113.26  10.349  113.27  11.116 113.239
+Connection Culv=1,1.0668,,21.43,0.033,0.5,1,2,3,110.88,110.83, 1 ,import #1   , 0 ,
+     3.6     3.6
+Conn Culvert Barrel=1,Culvert1,3
+470228.130637954254842.241722629470221.159718217254821.976535196
+470221.159718217254821.976535196
+Conn Culv Bottom n=0.03
+Conn Culv Bottom Depth=0.10668
+
+Option 12 (Small culvert - East Side): 
+
+Conn Outlet Rating Curve= 0 ,False,,
+Connection=Culvert 2       ,470252.1402384,254824.5789745
+Connection Desc=
+Connection Line=2
+470262.336175762254821.820188516470252.609221206  254824.4580067
+Connection Last Edited Time=Aug/03/2020 19:59:27
+Conn Near Repeats=1
+Conn Protection Radius=-1
+Connection Up SA=2D Flow         
+Connection Dn SA=2D Flow         
+Conn Routing Type= 1 
+Conn Use RC Family=False
+Conn OverFlow Method 2D=False
+Conn Weir WD=
+Conn Weir Coef=1.66
+Conn Weir Is Ogee= 0 
+Conn Simple Spill Pos Coef=0.05
+Conn Simple Spill Neg Coef=0.05
+Conn Weir SE= 11 
+       0 113.317    .665 113.305   1.806 113.327   3.553  113.28   4.959 113.278
+   5.684 113.261   6.371 113.261   6.941 113.294    7.86 113.269   9.223 113.298
+  10.078  113.29
+Connection Culv=1,1.0668,,26,0.033,0.5,1,2,3,110.59,110.54, 1 ,import #2   , 0 ,
+     5.6     5.6
+Conn Culvert Barrel=1,Culvert2,3
+470259.639112752254832.838032526470252.650273013254807.794690128
+470252.650273013254807.794690128
+Conn Culv Bottom n=0.03
+Conn Culv Bottom Depth=0.10668
+
+Option 13 (Large box culvert - West Side): 
+Connection=Box Culvert 1   ,470218.8676698,254833.8644117
+Connection Desc=
+Connection Line=2
+470228.209404683254831.299847172 470217.41083649254833.937665357
+Connection Last Edited Time=Jun/18/2020 19:52:04
+Conn Near Repeats=1
+Conn Protection Radius=-1
+Connection Up SA=2D Flow         
+Connection Dn SA=2D Flow         
+Conn Routing Type= 1 
+Conn Use RC Family=False
+Conn OverFlow Method 2D=False
+Conn Weir WD=
+Conn Weir Coef=1.66
+Conn Weir Is Ogee= 0 
+Conn Simple Spill Pos Coef=0.05
+Conn Simple Spill Neg Coef=0.05
+Conn Weir SE= 10 
+       0 113.298   1.502 113.313   2.223 113.337   3.664  113.34   5.826 113.322
+   6.875 113.293   8.708 113.289   9.429  113.26  10.349  113.27  11.116 113.239
+Connection Culv=2,1.2192,3.6576,21.43,0.033,0.5,1,16,1,110.88,110.83, 1 ,import #1   , 0 ,
+     3.6     3.6
+Conn Culvert Barrel=1,Culvert1,3
+470228.130637954254842.241722629470221.159718217254821.976535196
+470221.159718217254821.976535196
+Conn Culv Bottom n=0.03
+Conn Culv Bottom Depth=0.12192
+
+Option 14 (Large box culvert - East Side): 
+
+Conn Outlet Rating Curve= 0 ,False,,
+Connection=Box Culvert 2   ,470252.1402384,254824.5789745
+Connection Desc=
+Connection Line=2
+470262.336175762254821.820188516470252.609221206  254824.4580067
+Connection Last Edited Time=Aug/04/2020 08:38:58
+Conn Near Repeats=1
+Conn Protection Radius=-1
+Connection Up SA=2D Flow         
+Connection Dn SA=2D Flow         
+Conn Routing Type= 1 
+Conn Use RC Family=False
+Conn OverFlow Method 2D=False
+Conn Weir WD=
+Conn Weir Coef=1.66
+Conn Weir Is Ogee= 0 
+Conn Simple Spill Pos Coef=0.05
+Conn Simple Spill Neg Coef=0.05
+Conn Weir SE= 11 
+       0 113.317    .665 113.305   1.806 113.327   3.553  113.28   4.959 113.278
+   5.684 113.261   6.371 113.261   6.941 113.294    7.86 113.269   9.223 113.298
+  10.078  113.29
+Connection Culv=2,1.2192,3.6576,26,0.033,0.5,1,16,1,110.59,110.54, 1 ,import #2   , 0 ,
+     5.6     5.6
+Conn Culvert Barrel=1,Culvert2,3
+470259.639112752254832.838032526470252.650273013254807.794690128
+470252.650273013254807.794690128
+Conn Culv Bottom n=0.03
+Conn Culv Bottom Depth=0.12192
+

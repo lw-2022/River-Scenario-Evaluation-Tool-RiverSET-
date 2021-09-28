@@ -1,0 +1,9 @@
+Scenario 1: 1, 6, 7, 8
+Scenario 2: 2, 7, 8
+Scenario 3: 3, 6, 7, 8
+Scenario 4: 1, 6, 8, 9
+Scenario 5: 1, 6, 8, 10
+Scenario 6: 1, 6, 7, 8, 11, 12
+Scenario 7: 1, 6, 7, 8, 13, 14
+Scenario 8: 4, 6, 7, 8, 11, 12
+Scenario 9: 5
