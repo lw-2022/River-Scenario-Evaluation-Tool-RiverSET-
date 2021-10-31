@@ -34,9 +34,10 @@ import rasutils
 # To get the cell and face numbers for the "cells.txt" and "faces.txt" files go to RasMapper. Under Geometries click on the 2D Flow Area
 # that will be used in the analysis.  Right click on the cell or face. Click on Plot Property Table and click on one of the cell or face options to identify which 
 # cell or face number it is. 
-# To get the face point numbers for the "facepts.txt" file go to RasMapper.  Under a results file utilizing the same geometry.  Click on the 2D Flow Area.  Right click 
+# To get the face point numbers for the "facepts.txt" file go to RasMapper.  Under a results file utilizing the same geometry, click on the 2D Flow Area.  Right click 
 # on a face point.  Click on Plot Time Series and click on Face Point: Velocity which will give the face point number for that point.  
-
+# Each evaluation parameter has a path that is referenced when reading the results HDF file.  This code that extracts the results from the HDF file is in the
+# rasutils.py file on lines 198-224.  You can update these paths for your model or additional variables you may want to analyze. 
 
 optionsfile = "Options.txt" # Text file that includes the terrain and geometry options (culverts, bridges, etc.)
 scenariosfile = "Scenarios3.txt" # Text file that includes the scenario combinations by number 

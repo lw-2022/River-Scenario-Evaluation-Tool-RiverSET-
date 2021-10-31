@@ -195,6 +195,8 @@ def runHECResults(minDepth, optionsfile = "", scenariosfile = "", geometryfile =
         
         ########################## CALCULATE RESULTS ########################## 
         
+        # Pathes are required to the locations in the HDF where each of the evaluation parameters are stored
+        # Update as needed to the variables desired
         pathnameDepth = "Results/Unsteady/Output/Output Blocks/Base Output/Unsteady Time Series/2D Flow Areas/2D Flow/Depth" # Path to Depth in HDF results file
         pathnameVelocity = "Results/Unsteady/Output/Output Blocks/Base Output/Unsteady Time Series/2D Flow Areas/2D Flow/Face Velocity" # Path to Velocity in HDF results file
         pathnameShearStress = "Results/Unsteady/Output/Output Blocks/Base Output/Unsteady Time Series/2D Flow Areas/2D Flow/Face Shear Stress" # Path to Shear Stress in HDF results file
@@ -211,9 +213,10 @@ def runHECResults(minDepth, optionsfile = "", scenariosfile = "", geometryfile =
         # where the key is the location name and the values are a list of the face points
         facePoints = getLocations(faceptsfile)
         
+        # Reads the results .p#.HDF file specifed in the driver
         hecFile = h5py.File(HECresultsfile, 'r') # Creates a dictonary type object of HEC-RAS results file
         
-        
+        # Each evaluation parameter reads the results HDF file at the path specified above (lines 200-204)
         dataDepth = hecFile[pathnameDepth] # Depth
         dataVelocity = hecFile[pathnameVelocity] # Velocity
         dataShearStress = hecFile[pathnameShearStress] # Shear stress 
